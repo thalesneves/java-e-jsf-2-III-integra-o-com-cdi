@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.alura.livrariamaven</groupId>
+  <artifactId>livraria-maven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Livraria Alura</name>
+  
+  <properties>
+  	<maven.compiler.source>11</maven.compiler.source>
+  	<maven.compiler.target>11</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+	
+	<dependency>
+	    <groupId>org.jboss.weld.servlet</groupId>
+	    <artifactId>weld-servlet</artifactId>
+	    <version>2.4.8.Final</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>javax.validation</groupId>
+	    <artifactId>validation-api</artifactId>
+	    <version>2.0.1.Final</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.primefaces</groupId>
+	    <artifactId>primefaces</artifactId>
+	    <version>7.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.18</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-entitymanager</artifactId>
+	    <version>5.4.10.Final</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.sun.faces</groupId>
+	    <artifactId>jsf-api</artifactId>
+	    <version>2.2.20</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.sun.faces</groupId>
+	    <artifactId>jsf-impl</artifactId>
+	    <version>2.2.20</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.primefaces.themes</groupId>
+		<artifactId>all-themes</artifactId>
+		<version>1.0.10</version>
+	</dependency>
+	
+  </dependencies>
+  
+  <repositories>
+  	<repository>
+		<id>prime-repo</id>
+		<name>PrimeFaces Maven Repository</name>
+		<url>http://repository.primefaces.org</url>
+		<layout>default</layout>
+	</repository>
+  </repositories>
+</project>
